@@ -1,16 +1,83 @@
-# React + Vite
+# Task Manager App – React + Tailwind CSS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+This project is a Task Manager web application built using **React** and **Tailwind CSS**.  
+It demonstrates component architecture, state management with hooks, API integration (simulated), and responsive design.
 
-Currently, two official plugins are available:
+## Features
+- Add, edit, and delete tasks
+- Mark tasks as completed
+- Filter tasks (All, Active, Completed)
+- Responsive design for mobile, tablet, and desktop
+- Light/dark theme support
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Setup Instructions
 
-## React Compiler
+### 1. Clone the repository
+```bash
+git clone <your-repo-url>
+cd task-manager-app
+2. Install dependencies
+bash
+Copy code
+npm install
+3. Start the development server
+bash
+Copy code
+npm run dev
+The app will be available at: http://localhost:5173/
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Project Structure
+css
+Copy code
+task-manager-app/
+├── node_modules/
+├── public/
+│   └── vite.svg
+├── src/
+│   ├── components/
+│   │   ├── TaskManager.jsx
+│   │   ├── Button.jsx
+│   │   └── ...other components
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+├── package.json
+├── package-lock.json
+└── README.md
+Components
+TaskManager.jsx – Main component for handling tasks
 
-## Expanding the ESLint configuration
+Button.jsx – Reusable button component
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+App.jsx – Renders TaskManager inside main app
+
+index.css – Global styles and Tailwind integration
+
+Usage
+Add a task by typing in the input field and clicking "Add"
+
+Mark tasks as complete by clicking the checkbox
+
+Delete tasks by clicking the delete button
+
+Filter tasks using "All", "Active", or "Completed" buttons
+
+Toggle light/dark mode using the theme switcher (if implemented)
+
+Notes
+This project uses in-memory state; tasks are not persisted after page reload.
+
+Tailwind CSS is used for styling and responsiveness.
+
+The project is ready to be submitted to GitHub Classroom or zipped for submission.
+
+Screenshots
+(Add screenshots of your app here to demonstrate UI)
+
+Author
+Biruktawit Tesfaye
+
+vbnet
+Copy code
+
